@@ -50,6 +50,37 @@
             background: #173b69;
         }
 
+        .circle_banner {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: none !important;
+            background-size: 100%!important;
+            box-shadow: 0px 0px 80px rgba(88,88,88,.8);
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            left: 50%;
+            display: block;
+            margin-top: -22px;
+            margin-left: 18px;
+        }
+
+        .wave_banner {
+            position: relative;
+            text-align: center;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0;
+            z-index: -1;
+            pointer-events: none;
+            animation: Waveeffects 2s linear infinite;
+        }
+
         .footer-content {
             max-width: 1140px;
             margin: auto;
@@ -124,23 +155,23 @@
                     <div class="col-md-6 col-lg-6">
                         <div class="banner_text forResBannerText">
                             <h1 class="banner_title">
-                                Your <img style='width:44px; height: 44px;' src='adacoin.png' alt="₳" /> is in safe
+                                Your <img style='width:28px; height: 28px;' src='adacoin.png' alt="₳" /> is in safe
                                 hands
                             </h1>
                             <p class="banner_sub_head mb-4 mt-4">
-                                Rest easy and trust our closely-monitored, specialised cloud
-                                infrastructure to provide reliable returns while upholding the integrity of the Cardano
+                                Rest easy as our closely-monitored, specialised cloud
+                                infrastructure provide reliable returns while upholding the integrity of the Cardano
                                 blockchain ecosystem
                             </p>
                             <dl class="pool-details">
                                 <dt>Ticker</dt>
                                 <dd>SAFE</dd>
                                 <dt>Margin</dt>
-                                <dd>1.9% - 4.4%</dd>
+                                <dd><a href='#rewards'>1.9% - 4.4%</a></dd>
                                 <dt>Pledge</dt>
                                 <dd>500,000 ₳</dd>
                             </dl>
-                            <a href="/request-a-demo" class="btn btn-reverse btn-arrow">
+                            <a href="#" class="btn btn-reverse btn-arrow">
                                 <span>
                                     Calculate R.O.S
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -185,16 +216,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 class="heading resHead"><span>Maximising Your Rewards</span></h2>
+                            <h2 id='rewards' class="heading resHead"><span>Maximising Your Rewards</span></h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="debt-content">
-                                <!-- <h3>CodeScan’s solutions are proven to:</h5> -->
                                 <ul>
                                     <li>
-                                        Our margin reduces as the stake pool grows
+                                        Margin drops over time as our pool grows
                                         <ul style='padding:5px 20px 0;'>
                                             <li>5-10M: 4.3%</li>
                                             <li>10-20M: 4.0%</li>
@@ -228,7 +258,6 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="debt-content">
-                                <!-- <h3>CodeScan’s solutions are proven to:</h5> -->
                                 <ul>
                                     <li>
                                         All staking rewards for the pool go back into increasing our pledge. We are in
@@ -259,7 +288,6 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="debt-content">
-                                <!-- <h3>CodeScan’s solutions are proven to:</h5> -->
                                 <ul>
                                     <li>
                                         Combined 30+ years of senior experience in the largest technology and e-commerce
